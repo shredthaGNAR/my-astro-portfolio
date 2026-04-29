@@ -19,6 +19,7 @@ Portfolio template built with Astro. All your content lives in simple JSON files
 
 ![Astro Portfolio Theme Official Sweater](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/header/header--astro--portfolio-theme-github-gitlab-pages.jpg "Generate Your Portfolio Now")
 
+[Click to view a preview of the theme](#preview-of-theme)
 
 ---
 
@@ -1028,3 +1029,34 @@ Controls that require a backend, authentication system, or session management ar
 | V14.4 | HTTP Security Headers | ⚠ | Security headers must be set at the CDN / web server level, not in static output. See recommended headers below. |
 
 **Reference:** [OWASP ASVS on GitHub](https://github.com/OWASP/ASVS) · [OWASP ASVS Project Page](https://owasp.org/www-project-application-security-verification-standard/)
+
+---
+
+## Preview of Theme
+
+![Astro Portfolio Theme Official Hero Section](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/posts/astro-portfolio-theme-1-hero.png "Imagine your name here on your own website")
+
+
+![Astro Portfolio Theme Official About Section](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/posts/astro-portfolio-theme-2-about.png "When People Ask About You, now they know")
+
+
+![Astro Portfolio Theme Official Exp Section](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/posts/astro-portfolio-theme-3-exp.png "Put your top experience level here")
+
+
+![Astro Portfolio Theme Official Portfolio Section](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/posts/astro-portfolio-theme-4-portfolio.png "Showcase your work, art, portfolio")
+
+
+![Astro Portfolio Theme Official Projects Section](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/posts/astro-portfolio-theme-5-projects.png "What Projects Do You Want To Pull Images On GitHub From")
+
+
+![Astro Portfolio Theme Official Certifications Section](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/posts/astro-portfolio-theme-6-certifications.png "Formal or Informal Training - List it here")
+
+
+![Astro Portfolio Theme Official Links Section](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/posts/astro-portfolio-theme-7-links.png "Do you have more than one link - great, there's a place for TWO")
+
+
+![Astro Portfolio Theme Official Links Section](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/posts/astro-portfolio-theme-8-contact.png "Contact Me")
+
+
+![Astro Portfolio Theme Official Footer Section](https://raw.githubusercontent.com/MarcusHoltz/marcusholtz.github.io/refs/heads/main/assets/img/posts/astro-portfolio-theme-9-footer.png "Footer, incase you forgot this wasnt instagram")
+
