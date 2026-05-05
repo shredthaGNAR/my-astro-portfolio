@@ -404,6 +404,8 @@ Displayed as cards in the Projects section. Set `githubRepo` to auto-fetch a cov
 [
   {
     "title": "Photography Workflow App",
+    "featured": true,
+    "resume": true,
     "company": "Side Project",
     "category": "web",
     "description": "A lightweight local app for managing shoot intake, selects, and client delivery.",
@@ -411,15 +413,19 @@ Displayed as cards in the Projects section. Set `githubRepo` to auto-fetch a cov
     "icon": "eye",
     "link": "https://yourproject.com",
     "githubRepo": "photo-workflow",
-    "featuredImage": "/images/projects/web-app.jpg",
+    "sliderImage": "/images/projects/web-app.jpg",
+    "sliderOrder": 1,
     "backgroundImage": "/images/projects/web-app.jpg",
     "colorIcon": "/icons/materialdesign/camera-outline.svg"
   }
 ]
 ```
 
-- `githubRepo` — the repo name (not the full URL). If set, the build reads that repo's README and extracts the first non-badge image, overriding `featuredImage`
-- Leave `githubRepo` as `""` to use `featuredImage` instead
+- `featured` — set to `true` to include the project in the **Featured** filter, which is the default active filter when the Projects section loads. Omit or set to `false` to exclude it from that filter (the project is still visible under "All" or its category).
+- `resume` — set to `true` to include the project in the **Notable Projects** section of the printable resume. Omit or set to `false` to keep it off the resume.
+- `sliderImage` — path to the image shown in the **hero section carousel** (e.g. `/images/projects/web-app.jpg`). Only projects with a `sliderImage` appear in the hero slider — omit the field entirely to exclude a project from the carousel.
+- `sliderOrder` — integer controlling the project's position in the hero carousel. Lower numbers appear first (`1` before `2`, etc.). Projects without this field sort to the end of the carousel.
+- `githubRepo` — the repo name (not the full URL). If set, the build reads that repo's README and extracts the first non-badge image as the project cover, overriding `sliderImage`. Leave as `""` to use `sliderImage` directly.
 - `icon` — a Heroicons name used as a fallback icon (e.g. `"eye"`, `"cpu-chip"`, `"document-text"`, `"command-line"`)
 - `colorIcon` — a locally cached icon file. Three CDN sources are supported; the build script auto-downloads any missing file before the Astro build runs:
   - `/icons/devicons/{name}.svg` — [devicons.dev](https://devicons.dev) (technology logos)
