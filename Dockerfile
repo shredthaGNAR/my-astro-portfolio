@@ -1,6 +1,6 @@
 # ── Stage 1: Dependencies ─────────────────────────────────────────────────────
 # Cached independently from source — only re-runs when package files change
-FROM node:22-alpine AS deps
+FROM node:22-slim AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
