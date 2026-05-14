@@ -257,7 +257,8 @@ async function ensureProjectImages() {
   const projectsPath = join(dataDir, 'projects.json');
   if (!existsSync(projectsPath)) return;
 
-  const projects = JSON.parse(readFileSync(projectsPath, 'utf8'));
+  const projectsJson = JSON.parse(readFileSync(projectsPath, 'utf8'));
+  const projects = Array.isArray(projectsJson) ? projectsJson : (projectsJson.items ?? []);
   const githubProjects = projects.filter((p) => p.githubRepo);
   if (githubProjects.length === 0) return;
 
