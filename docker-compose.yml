@@ -10,6 +10,7 @@ services:
     build:
       context: .
       target: builder
+      network: host
     container_name: astro-portfolio-theme
     volumes:
       - ./output:/app/dist:z
