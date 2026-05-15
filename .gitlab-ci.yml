@@ -1,9 +1,10 @@
-image: node:22-alpine
+image: node:24-alpine
 
 pages:
   stage: deploy
   script:
-    - npm install
+    - npm install -g pnpm@11 --silent
+    - pnpm install
     - |
       # CI_PAGES_URL is set by the GitLab runner to the full URL this project's
       # Pages will be served at (e.g. https://user.gitlab.io/project-name).
@@ -19,7 +20,7 @@ pages:
           export BASE_PATH="${PAGES_PATH}/"
         fi
       fi
-    - npm run build
+    - pnpm run build
     - cp -r dist/. public
   artifacts:
     paths:
